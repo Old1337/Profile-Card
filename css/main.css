@@ -1,0 +1,120 @@
+/* Start Global Rules */
+:root {
+  --dark-cyan-color: hsl(185, 75%, 39%);
+  --very-dark-color: hsl(229, 23%, 23%);
+  --dark-grayish-color: hsl(227, 10%, 46%);
+  --dark-gray-color: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background: url(../imgs/bg-pattern-top.svg) top -100% left no-repeat,
+    url(../imgs/bg-pattern-bottom.svg) bottom -100% right no-repeat var(--dark-cyan-color);
+  background-size: 250px;
+}
+@media (max-width: 375px) {
+  body {
+    background: url(../imgs/bg-pattern-top.svg) top left -250% no-repeat,
+      url(../imgs/bg-pattern-bottom.svg) bottom right -250% no-repeat var(--dark-cyan-color);
+    background-size: 300px;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card {
+  width: 180px;
+}
+
+.victor {
+  width: 50px;
+  background-color: white;
+  position: relative;
+  top: -25px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+h3 {
+  font-size: 10px;
+  color: var(--very-dark-color);
+  margin: 0;
+}
+
+h3 span {
+  color: var(--dark-gray-color);
+  font-weight: normal;
+  margin-left: 5px;
+}
+span {
+  font-size: 8px;
+  color: var(--dark-gray-color);
+  margin: 8px 0px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  border-top: var(--dark-gray-color) 1px solid;
+  width: 100%;
+  text-align: center;
+}
+h4 {
+  color: var(--very-dark-color);
+  font-size: 10px;
+  margin: 0;
+}
+p {
+  font-size: 8px;
+  margin: 0;
+  color: var(--dark-gray-color);
+}
